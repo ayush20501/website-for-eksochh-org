@@ -1,0 +1,368 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%;
+    line-height: 2;
+  }
+
+  .inline {
+    display: inline-block;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    display: grid;
+    font-size: 14px;
+  }
+
+  header p {
+    padding: 50px;
+    text-align: center;
+    color: #bebebe;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 700;
+  }
+
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .footer>* {
+    flex: 1 100%;
+  }
+
+
+  .b-footer {
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  /* Set a specific color for each brand */
+
+  /* Facebook */
+  .fa-instagram {
+    color: white;
+    font-size: 30px;
+  }
+</style>
+
+<head>
+  <title>eksochh</title>
+  <link rel="icon" href="{% static 'logo.png' %}" type="image/icon type">
+
+</head>
+
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">eksochh</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">About Us</a>
+        <a href="#mission" class="w3-bar-item w3-button">Our Mission</a>
+        <a href="#work" class="w3-bar-item w3-button">Our Work</a>
+        <a href="#skill" class="w3-bar-item w3-button">Our Program</a>
+        <a href="#contact" class="w3-bar-item w3-button"></i>Contact</a>
+        <a href="#confess" class="w3-bar-item w3-button">Anonymous Confession</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About Us</a>
+    <a href="#mission" onclick="w3_close()" class="w3-bar-item w3-button">Our Mission</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Our Work</a>
+    <a href="#skill" onclick="w3_close()" class="w3-bar-item w3-button">Our Program</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+    <a href="#confess" onclick="w3_close()" class="w3-bar-item w3-button">Anonymous Confession</a>
+  </nav>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="{% static 'hello.png' %}" alt="Architecture" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><b>eksochh</b></span></h1>
+      <h6 class="w3-xxmedium w3-text-white" class="inline"><b>Breakthesilence!</b></span></h6>
+    </div>
+  </header>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="text-align:center">ABOUT US</h3>
+    <p class="w3-center w3-large">Who are we?</p>
+    <p>
+    <h6>Hi! eksochh is female powered and focused on Empowering women around the world. At eksochh we talk about our
+      bodies, sexuality, sex-positive education, various cancers, self love, mental health and every single topic
+      pertaining to females
+      and the feminine experience.<br>
+      We have started this organization to bring change by promoting reproductive and sex-positive education, awarness
+      on various
+      cancers and mental health. As we know, these topics are necessary nowadays. So we want your support for this
+      organization by
+      spreading awarness.<br>
+      We are honest, badass and no topic is too taboo for us. We are a small community of college students from around
+      the world.
+      We hope you will join us in our mission.
+    </h6>
+    </p>
+  </div>
+  <!-- Aim Section -->
+  <div class="w3-container" style="padding:128px 16px" id="mission">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="text-align:center">OUR MISSION</h3>
+    <p class="w3-center w3-large">Our Goal, Vision and Commitment</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Uncensored</p>
+        <p>Women's bodies, voices, words and issues are highly censored. Women are scared to speak about issues like
+          abuse,sex even their own reproductive rights. So we want to create a platform where women are fully free to
+          say and do what they want without fear.
+        </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-volume-up w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Unmuted</p>
+        <p>Women Should not have to be quiet to be respected! We want all women to know that they have a Voice and
+          they should use it! </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Unfiltered</p>
+        <p>Girls grow up whith so much pressure and unrealistic expectations of what their body should be like. There
+          are some women who are already unfiltered no
+          matter the company.
+          You open yourself up to more progress, more fun, more laughs & more everything!</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cogs w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Support</p>
+        <p>We provide 24/7 help to all women who desperately need someone. If you need someone to talk to, we
+          listen.
+          We won't judge and tell you what to do.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1600px">
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+      <div class="w3-row-padding">
+        <div class="w3-col m6">
+          <h3>Community Organization</h3>
+          <p>Got Questions about:
+            <br>1. Reproductive and Sex Positive Education
+            <br>2. Cancers
+            <br>3. Mental Health
+            <br>and not sure who to talk? Don't worry we have got your back!
+          </p>
+          <p><a href="https://www.instagram.com/eksochh/" class="w3-button w3-black"><i class="fa fa-th"> </i>Chat with
+              us online!</a></p>
+        </div>
+        <div class="w3-col m6">
+          <img class="w3-image w3-round-large" src="{% static 'pic2.png' %}" width="400" height="110">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">1000+</span>
+        <br>Members
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">100+</span>
+        <br>Content
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">10+</span>
+        <br>Happy Volunteers
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">150+</span>
+        <br>Meetings
+      </div>
+    </div>
+
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding:128px 16px" id="work">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="text-align:center">OUR WORK</h3>
+      <p class="w3-center w3-large">What we've created for people recently</p>
+      <div class="w3-row-padding" style="margin-top:64px">
+        {% for i in data %}
+        <div class="w3-col l4 m6">
+          <img src="{{i.image.url}}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        {%endfor%}
+      </div>
+      <p><a href="https://www.instagram.com/eksochh/" class="w3-center w3-button w3-black "><i class="fa fa-th"> </i>See more here!</a></p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="w3-container w3-light-grey w3-padding-64" id="skill">
+      <div class="w3-row-padding">
+        <div class="w3-col m6">
+          <h3>OUR PROGRAM</h3>
+          <p>There is no greater gift than your time. Volunteering is a rewarding endeavor that provides insight
+            and personal enrichment. Side benefits include developing professional connections,
+            gaining experience and making new friends.</p>
+          <p>Are you passionate about sexual and mental health? Do you have skills to share?
+            Consider getting involved with eksochh. Our volunteer program allows you to be as involved as you want to
+            be.
+            eksochh use social media to share important information.
+            Our volunteer program allows you to share information on our page straight from your inbox.</p>
+          <a href="https://docs.google.com/forms/d/1SHE5FNxA_ATM3X7c1PmsHj37x9MPFua3zcHFfylZ56o/edit"
+            class="w3-button w3-black"><i class="fa fa-th"> </i>Know about our program!</a>
+          <br><br>
+          <a href="https://docs.google.com/forms/d/1Fnz-YXJF1wBI8TTstPvMcY8yuaYcLt0ISb7-bf6WHeo/edit"
+            class="w3-button w3-black"><i class="fa fa-th"> </i>Join our program!</a>
+        </div>
+        <div class="w3-col m6">
+          <p class="w3-wide"><i class="fa fa-search w3-margin-right"></i>Research Department Volunteers</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width:50%">50%</div>
+          </div>
+          <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Graphic Design Department Volunteers</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width:5%">5%</div>
+          </div>
+          <p class="w3-wide"><i class="fa fa-video-camera w3-margin-right"></i>Technical Department Volunteers</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width:1%">1%</div>
+          </div>
+          <p class="w3-wide"><i class="fa fa-telegram w3-margin-right"></i>Promoting Department Volunteers</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width:1%">1%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-32" id="contact">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">CONTACT US</h3>
+      <p>Do you have questions? Post your query and we'll get back to you within 24 hours. Lets get in touch.</p>
+      <form action="" method="POST">
+        {% csrf_token %}
+        <input class="w3-input w3-border" id="Name" name="Name" placeholder="Name" type="text" required>
+        <input class="w3-input w3-section w3-border" id="Email" name="Email" placeholder="Email" type="email" required>
+        <input class="w3-input w3-section w3-border" id="Insta" name="Insta" placeholder="Subject" type="text" required>
+        <input class="w3-input w3-section w3-border" id="Comments" name="Comments" placeholder="Comments" type="text"
+          required>
+        <button class="w3-button w3-black w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+
+
+    <!-- Confession Section -->
+    <div class="w3-container w3-padding-32" id="confess">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">ANONYMOUS CONFESSION</h3>
+      <p>Shhhh.....It's secret.</p>
+      <form action="confess" method="POST">
+        {% csrf_token %}
+        <input class="w3-input w3-section w3-border" id="Confess" name="Confess" placeholder="Confess" type="text"
+          required>
+        <button class="w3-button w3-black w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND CONFESSION
+        </button>
+      </form>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="b-footer">
+        <p>
+        <div class="social-footer-icons">
+          <a href="https://www.instagram.com/eksochh/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        2021 © All Rights Reserved | Designed by eksochh <br>
+        Contact: ekk.soch.organization@gmail.com
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === 'block') {
+          mySidebar.style.display = 'none';
+        } else {
+          mySidebar.style.display = 'block';
+        }
+      }
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+
+
+</body>
+
+</html>
