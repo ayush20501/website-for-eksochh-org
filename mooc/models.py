@@ -20,6 +20,3 @@ class Confession(models.Model):
 
 class Image(models.Model):
     image = models.ImageField(upload_to="myimages")
-
-    def __str__(self):
-        return self.image
