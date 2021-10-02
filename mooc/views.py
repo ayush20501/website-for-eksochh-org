@@ -14,7 +14,7 @@ def home(request):
         return redirect("/")
     else:
         data = Image.objects.all()
-        return render(request, 'home.html')
+        return render(request, 'home.html',{'data':data})
 
 
 def confess(request):
