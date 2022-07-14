@@ -1,9 +1,8 @@
 ### EKSOCHH ORGANIZATION WEBSITE
-This application is  female powered and focused on Empowering women around the world. Backend is supported by Django Framework and Front End using Bootstrap and HTML/CSS/JavaScript and also i use openweather to consume the API for this application.
+This application is  female powered and focused on Empowering women around the world. Backend is supported by Django Framework and Front End using Bootstrap and HTML/CSS/JavaScript.
 Project is created with-
 1. Django
 2. Bootstrap
-3. OpenWeatherMap
 
 [Live App](https://eksochh.herokuapp.com/)
 ***
