@@ -3,6 +3,7 @@ This application is  female powered and focused on Empowering women around the w
 Project is created with-
 1. Django
 2. Bootstrap
+3. Heroku
 
 [Live App](https://eksochh.herokuapp.com/)
 ***
